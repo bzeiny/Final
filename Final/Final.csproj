@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AEFD91D5-3DF6-44BE-8A85-74C0CC10B724}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Final</RootNamespace>
+    <AssemblyName>Final</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GameScreen.Designer.cs">
+      <DependentUpon>GameScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MenuScreen.Designer.cs">
+      <DependentUpon>MenuScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="player.cs" />
+    <Compile Include="PreGame2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PreGame2.Designer.cs">
+      <DependentUpon>PreGame2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PreGameScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PreGameScreen.Designer.cs">
+      <DependentUpon>PreGameScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="winnerScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="winnerScreen.Designer.cs">
+      <DependentUpon>winnerScreen.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameScreen.resx">
+      <DependentUpon>GameScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuScreen.resx">
+      <DependentUpon>MenuScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PreGame2.resx">
+      <DependentUpon>PreGame2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PreGameScreen.resx">
+      <DependentUpon>PreGameScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="winnerScreen.resx">
+      <DependentUpon>winnerScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenuScreen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\[CLEAN] DaBaby - Ball If I Want To.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dreamville - Under The Sun ft. J. Cole, DaBaby, Lute %28Official Music Video%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\levitating.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\under.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Squid Game OST - Pink Soldiers %28Extended Ver.%29.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playbut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2menuscreen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leaderboad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playbut2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rlgl1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rlgl3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playerNumber.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playerName.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enter2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enter3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\[ONTIVA.COM] SQUID GAME_ Pink Soldiers %28RemixManiacs Trap Remix%29-HQ.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shirtclr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shirtclr1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\greenLightSound.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redLightSound.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
